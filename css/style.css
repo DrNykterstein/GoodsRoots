@@ -1,0 +1,47 @@
+/*Estilos generales */
+*{
+	margin:0;
+	padding:0;
+}
+ /* Globales */
+ .contenedor{
+ 	max-width:1200px;/* Altura Maxima, toma todo el espacio disponible pero no te pases de 
+ 	1200px */
+ 	margin: 0 auto 0 auto;/*Para centrarlo */
+
+ }
+
+/* Header */
+.sitio-header.inicio{
+	background-image:url(../img/header.jpg);
+	background-position: center center;/*Para posicionar la imagen */
+	background-size: cover;/*Para que me tome todo el ancho y la altura, pero siempre guardando
+	las propociones de la imagen */
+	height:100vh;/*Alto de la imagen, 100vh para cubrir la altura de cualquier pantalla*/
+	min-height: 600px;/*Altura minima */ 
+
+}
+
+.barra{
+	display: flex;/*Para habilitar FlexBox */
+	justify-content: space-between;/*Para alinear uno a la derecha y otro a la izquierda*/
+	align-items: center;
+	padding-top:30px;/*Para crear un poco de separacion, padding-top es una especie de 
+	espacio hacia dentro del elemento y el margin es la separacion de otro elemento hacia fuera */
+}
+
+/*Navegacion */
+.navegacion a{
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 17px;
+	margin-right: 20px;/*Separacion con el siguiente elemento, o seperacion a la derecha*/
+}
+
+.navegacion a:last-of-type{/*Selecciono el ultimo elemento */
+	margin: 0;/*Le quito el margin al ultimo elemento, que es contacto */
+}
+
+.navegacion a:hover{
+	color: #71b100;
+}
