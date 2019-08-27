@@ -1,15 +1,50 @@
+/* Reset para REM */
+html{
+	font-size: 62.5%; /* Reset para REM */
+	/* 62.5 = 10px de 16px */
+}
+
 /*Estilos generales */
 *{
 	margin:0;
 	padding:0;
 }
+
+body{
+	font-size: 1.6rem;
+	line-height: 2;
+}
+
  /* Globales */
  .contenedor{
- 	max-width:1200px;/* Altura Maxima, toma todo el espacio disponible pero no te pases de 
+ 	max-width:120rem;/* Altura Maxima, toma todo el espacio disponible pero no te pases de 
  	1200px */
  	margin: 0 auto 0 auto;/*Para centrarlo */
 
  }
+
+h1{
+ 	font-size: 3.8rem;
+}
+
+h2{
+	font-size: 3.4rem;
+}
+
+h3{
+	font-size: 3rem;
+}
+
+h4{
+	font-size: 2.6rem;
+}
+
+/* Utilidades */
+.seccion{
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	/*Separaciones arriba y abajo  */ 
+}
 
 /* Header */
 .sitio-header.inicio{
@@ -18,15 +53,30 @@
 	background-size: cover;/*Para que me tome todo el ancho y la altura, pero siempre guardando
 	las propociones de la imagen */
 	height:100vh;/*Alto de la imagen, 100vh para cubrir la altura de cualquier pantalla*/
-	min-height: 600px;/*Altura minima */ 
+	min-height: 60rem;/*Altura minima */ 
 
+}
+
+.contenido-h{
+	height: 100%;
+	display: flex;/*Para habilitar FlexBox */
+	/*Le paso la direccion a la que debe ir */
+	flex-direction: column;/*column de arriba hacia bajo */
+	justify-content: space-between;/*Para alinear el contenido verticalmente */
+}
+
+.contenido-h h1{
+	color: #ffffff;
+	padding-bottom:3rem; /* ==30px */
+	max-width: 60rem;
+	line-height: 2;/*interlineado */
 }
 
 .barra{
 	display: flex;/*Para habilitar FlexBox */
-	justify-content: space-between;/*Para alinear uno a la derecha y otro a la izquierda*/
-	align-items: center;
-	padding-top:30px;/*Para crear un poco de separacion, padding-top es una especie de 
+	justify-content: space-between;/*Para alinear uno a la derecha y otro a la izquierda y crear separacion*/
+	align-items: center;/*Para alinear el contenido verticalmente */
+	padding-top:3rem;/*Para crear un poco de separacion, padding-top es una especie de 
 	espacio hacia dentro del elemento y el margin es la separacion de otro elemento hacia fuera */
 }
 
@@ -34,8 +84,8 @@
 .navegacion a{
 	color: #ffffff;
 	text-decoration: none;
-	font-size: 17px;
-	margin-right: 20px;/*Separacion con el siguiente elemento, o seperacion a la derecha*/
+	font-size: 1.7rem;
+	margin-right: 2rem;/*Separacion con el siguiente elemento, o seperacion a la derecha*/
 }
 
 .navegacion a:last-of-type{/*Selecciono el ultimo elemento */
@@ -44,4 +94,23 @@
 
 .navegacion a:hover{
 	color: #71b100;
+}
+
+/* Seccion nosotros */
+.encabezado-nosotros{
+	font-weight: 300;
+	text-align: center;
+}
+.iconos-nosotros{
+	display: flex;
+}
+
+.iconos{
+	flex-basis: calc(33.3% - 1rem);/*width de flexbox */
+	justify-content: space-between;/*Para separarlos */
+	text-align: center;/*para centrar*/
+}
+
+.iconos h3{
+	text-transform: uppercase;
 }

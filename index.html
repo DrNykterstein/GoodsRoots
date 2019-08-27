@@ -9,7 +9,7 @@
 </head>
 <body>
 	<header class="sitio-header inicio">
-		<div class="contenedor">
+		<div class="contenedor contenido-h">
 			<div class="barra">
 				<a href="#"><img src="img/logo.svg" alt=""></a>
 				<!--Navegacion -->
@@ -24,31 +24,33 @@
 		</div><!--Contenedor -->
 	</header>
 	<!--Seccion acerca de nosotros -->
-	<section>
-		<h2>Más sobre nosotros</h2>
+	<section class="contenedor seccion">
+		<h2 class="encabezado-nosotros">Más sobre nosotros</h2>
+		<!-- Para poder usar FlexBox -->
+		<div class="iconos-nosotros">
+			<div class="iconos">
+				<img src="img/icono1.svg" alt="">
+				<h3>Seguridad</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet molestiae, quidem expedita saepe numquam recusandae maxime obcaecati consectetur eum, totam quibusdam ab enim voluptas perferendis, deleniti odio impedit quam sed.</p>
+			</div>
 
-		<div>
-			<img src="img/icono1.svg" alt="">
-			<h3>Seguridad</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet molestiae, quidem expedita saepe numquam recusandae maxime obcaecati consectetur eum, totam quibusdam ab enim voluptas perferendis, deleniti odio impedit quam sed.</p>
-		</div>
+			<div class="iconos">
+				<img src="img/icono2.svg" alt="">
+				<h3>El mejor precio</h3>
+				<p>Accusantium, debitis, molestias labore explicabo, soluta voluptate ipsum dicta consequuntur!</p>
+			</div>
 
-		<div>
-			<img src="img/icono2.svg" alt="">
-			<h3>El mejor precio</h3>
-			<p>Accusantium, debitis, molestias labore explicabo, soluta voluptate ipsum dicta consequuntur!</p>
-		</div>
-
-		<div>
-			<img src="img/icono3.svg" alt="">
-			<h3>A tiempo</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere iure eligendi molestiae nulla perferendis vitae nemo ullam sint, quas minus voluptates molestias, sapiente nesciunt magni esse alias! Fuga, mollitia? Officiis!</p>
-		</div>
+			<div class="iconos">
+				<img src="img/icono3.svg" alt="">
+				<h3>A tiempo</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere iure eligendi molestiae nulla perferendis vitae nemo ullam sint, quas minus voluptates molestias, sapiente nesciunt magni esse alias! Fuga, mollitia? Officiis!</p>
+			</div>
+		</div><!--Flexbox -->
 	</section>
 	<!--Nueva seccion de casas en venta -->
 	<section>
-		<main>
-			<h2>Casas y Aptos en Venta</h2>
+		<main class="seccion contenedor">
+			<h2 class="encabezado-nosotros">Casas y Aptos en Venta</h2>
 
 			<div>
 				<img src="img/anuncio1.jpg" alt="">
