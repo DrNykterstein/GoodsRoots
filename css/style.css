@@ -2,6 +2,11 @@
 html{
 	font-size: 62.5%; /* Reset para REM */
 	/* 62.5 = 10px de 16px */
+	box-sizing: border-box;
+}
+
+*, *:before, *:after{
+	box-sizing: inherit;
 }
 
 /*Estilos generales */
@@ -50,14 +55,20 @@ h4{
 	/*Separaciones arriba y abajo  */ 
 }
 
+.dblock{
+	display: block!important;
+}
+
 /*Botones*/
 .botones{
 	color:#ffffff;
 	font-weight: 700;
 	text-decoration: none;
 	font-size: 1.8rem;
-	padding: 1rem 4rem;
-
+	padding: 1rem 3rem;
+	display: inline-block;
+	margin-top: 3rem;
+	text-align: center;
 }
 
 .amarillo{
@@ -157,4 +168,28 @@ h4{
 .precio{
 	color: #71b100;
 	font-weight: 700;
+}
+
+/*Para alinear a la derecha el boton de ver todas */
+.alinear-derecha{
+	display: flex;
+	justify-content: center;
+}
+
+.imagen-contacto{
+	background-image: url(../img/encuentra.jpg);
+	/* Le doy mas altura */
+	height: 40rem;
+	background-position: center center;
+	display: flex;
+	align-items: center; 
+}
+
+.contenido-contacto{
+	flex:1;/*Factor de crecimiento */
+	color: white;
+}
+
+.contenido-contacto p{
+	font-size: 1.8rem;
 }
