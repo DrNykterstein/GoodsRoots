@@ -193,3 +193,52 @@ h4{
 .contenido-contacto p{
 	font-size: 1.8rem;
 }
+
+/* Seccion del blog */
+.seccion-inferior{
+	display: flex;/*Para habilitar flexbox */
+	justify-content: space-between;/*Para la separacion */
+}
+
+.seccion-inferior.blog{
+	flex-basis: 60%;/*Para poner la imagen mas pequeña, el width de flexbox */
+}
+
+.seccion-inferior.testimoniales{
+	flex-basis: calc(40%-2rem);
+}
+
+.entrada-blog{
+	display: flex;
+	justify-content: space-between
+}
+
+.entrada-blog .imagen{
+	flex-basis: 40%;
+}
+
+.entrada-blog .texto-entrada{
+	flex-basis: calc(60% - 3rem);
+}
+
+.entrada-blog h4{
+	line-height: 1.4rem;
+}
+
+.entrada-blog .texto-entrada a{
+	color:black;
+	text-decoration: none;
+}
+
+.texto-entrada h4::after{/*un psuedo elemento */
+	content: '';
+	display: block;
+	width: 15rem;
+	height: .3rem;
+	background-color:#71b100;
+	margin-top: 1rem;
+}
+
+.texto-entrada p span{
+	color: #E08709;
+}
