@@ -60,6 +60,14 @@ h4{
 	display: block!important;
 }
 
+.centrar{
+	text-align: center;
+}
+
+.fw300{
+	font-weight: 300;
+}
+
 /*Botones*/
 .botones{
 	color:#ffffff;
@@ -80,6 +88,11 @@ h4{
 	background-color: #71b100;
 }
 /* Header */
+.sitio-header{
+	background-color: #333333;
+	padding: 1rem 0 3rem 0;
+}
+
 .sitio-header.inicio{
 	background-image:url(../img/header.jpg);
 	background-position: center center;/*Para posicionar la imagen */
@@ -288,4 +301,22 @@ h4{
 
 .derechos{
 	color:#ffffff;
+}
+
+/* Otras paginas */
+.contenido-nosotros{
+	display: grid;
+	grid-template-columns:50% 50%;/*Columnas de CSS grid */
+	grid-column-gap: 2rem;/*Para agregar separacion */
+}
+
+.texto-nosotros blockquote{
+	font-weight: 900;
+	font-size: 2rem;
+	margin-right: 0;
+	padding: 1rem 0 3rem 0;
+}
+
+.texto-nosotros p{
+	text-align: left;
 }
