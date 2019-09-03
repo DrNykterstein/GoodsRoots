@@ -343,3 +343,6 @@ h4{
 }
 
 /* formulario de contacto */
+label{
+	display: block;
+}
