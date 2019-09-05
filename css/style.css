@@ -23,6 +23,7 @@ body{
 
  /* Globales */
  .contenedor{
+ 	width: 95%;
  	max-width:120rem;/* Altura Maxima, toma todo el espacio disponible pero no te pases de 
  	1200px */
  	margin: 0 auto 0 auto;/*Para centrarlo */
@@ -79,6 +80,17 @@ h4{
 	margin-top: 3rem;
 	text-align: center;
 	border: none;
+	display: block;
+	flex: 0 0 100%;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+	.botones{
+		display: inline-block;
+		flex: 0 0 auto;
+	}
+	
 }
 
 .botones:hover{
@@ -114,6 +126,13 @@ h4{
 	/*Le paso la direccion a la que debe ir */
 	flex-direction: column;/*column de arriba hacia bajo */
 	justify-content: space-between;/*Para alinear el contenido verticalmente */
+	text-align: center;
+}
+
+@media (min-width: 768px){
+	.contenido-header{
+		text-align: left;
+	}
 }
 
 .contenido-h h1{
@@ -124,11 +143,16 @@ h4{
 }
 
 .barra{
-	display: flex;/*Para habilitar FlexBox */
-	justify-content: space-between;/*Para alinear uno a la derecha y otro a la izquierda y crear separacion*/
-	align-items: center;/*Para alinear el contenido verticalmente */
 	padding-top:3rem;/*Para crear un poco de separacion, padding-top es una especie de 
 	espacio hacia dentro del elemento y el margin es la separacion de otro elemento hacia fuera */
+}
+
+@media (min-width: 768px){
+	.barra{
+		display: flex;/*Para habilitar FlexBox */
+		justify-content: space-between;/*Para alinear uno a la derecha y otro a la izquierda y crear separacion*/
+		align-items: center;/*Para alinear el contenido verticalmente */
+	}
 }
 
 /*Navegacion */
@@ -136,11 +160,17 @@ h4{
 	color: #ffffff;
 	text-decoration: none;
 	font-size: 1.7rem;
-	margin-right: 2rem;/*Separacion con el siguiente elemento, o seperacion a la derecha*/
+	display: block;
 }
 
-.navegacion a:last-of-type{/*Selecciono el ultimo elemento */
-	margin: 0;/*Le quito el margin al ultimo elemento, que es contacto */
+@media (min-width: 768px){
+	.navegacion a{
+		display: inline-block;
+		margin-right: 2rem;/*Separacion con el siguiente elemento, o seperacion a la derecha*/
+	}
+	.navegacion a:last-of-type{/*Selecciono el ultimo elemento */
+		margin: 0;/*Le quito el margin al ultimo elemento, que es contacto */
+	}
 }
 
 .navegacion a:hover{
@@ -152,14 +182,22 @@ h4{
 	font-weight: 300;
 	text-align: center;
 }
-.iconos-nosotros{
-	display: flex;
+
+@media (min-width: 768px){
+	.iconos-nosotros{
+		display: flex;
+	}	
 }
 
 .iconos{
-	flex-basis: calc(33.3% - 1rem);/*width de flexbox */
-	justify-content: space-between;/*Para separarlos */
 	text-align: center;/*para centrar*/
+}
+
+@media (min-width: 768px) {
+	.iconos{
+		flex-basis: calc(33.3% - 1rem);/*width de flexbox */
+		justify-content: space-between;/*Para separarlos */
+	}
 }
 
 .iconos h3{
